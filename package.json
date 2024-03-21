@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "egg": "^3.17.5",
+    "egg-cors": "^3.0.0",
     "egg-scripts": "2"
   },
   "devDependencies": {
