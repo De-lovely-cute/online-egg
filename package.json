@@ -12,7 +12,7 @@
     "egg-scripts": "2"
   },
   "devDependencies": {
-    "egg-bin": "6",
+    "egg-bin": "^5.17.0",
     "egg-mock": "5",
     "eslint": "8",
     "eslint-config-egg": "13"
