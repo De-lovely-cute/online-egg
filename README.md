@@ -29,3 +29,9 @@ npm stop
 - Use `npm test` to run unit test.
 
 [egg]: https://eggjs.org
+
+
+## 解决 egg-bin 安装不了问题
+```
+直接在https://www.npmjs.com/package/egg-bin上面安装最新的
+```
