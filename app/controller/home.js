@@ -8,7 +8,8 @@ class HomeController extends Controller {
     //   data: [{id:1, name: ""}]
     // }
     let res = [{id:1, name: ""}]
-    ctx.apiSuccess(res, "消息来了")
+    // ctx.apiSuccess(res, "消息来了")
+    ctx.apiFail(res, "消息错误")
   }
 }
 

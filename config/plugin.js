@@ -8,4 +8,11 @@ module.exports = {
     enable: true,
     package: 'egg-cors',
   },
+
+  // sequelize数据库配置
+  sequelize:{
+    enable: true,
+    package: 'egg-sequelize',
+  }
 };
+
