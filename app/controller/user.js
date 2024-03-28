@@ -98,7 +98,15 @@ class UserController extends Controller {
     // 返回用户信息
     return ctx.apiSuccess(user)
   }
-  // 验证密码
+  /**
+   * 验证密码
+   * 
+   * 输入的密码和数据库中的密码进行比较
+   * 数据库中的密码是加密后的密码
+   * @param {*} password
+   * @param {*} hash_password 
+   * @returns 
+   */
   async checkPassword(password, hash_password) {
     const hmac = crypto.createHash('sha256', this.app.config.crypto.secret)
     hmac.update(password)
