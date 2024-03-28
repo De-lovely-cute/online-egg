@@ -32,8 +32,8 @@ class UserController extends Controller {
         //   ['password', 'repassword']
         // ]
     });
+    
     const { username, password, repassword } = ctx.request.body;  
-
     // 判断密码和确认密码是否一致
     if(password !== repassword){
       ctx.throw(400, "密码和确认密码不相同");

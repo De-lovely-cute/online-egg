@@ -21,7 +21,6 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
-  
   /**
    * 关闭csrf开启跨域
    */
@@ -33,6 +32,7 @@ module.exports = appInfo => {
     // 跨域白名单
     domainWhiteList: ["http://localhost:3000"],
   };
+  
   // 允许跨域的方法
   config.cors = {
     origin: "*",
@@ -74,6 +74,21 @@ module.exports = appInfo => {
   config.valparams = {
     locale    : 'zh-cn',
     throwError: true
+  };
+
+  // jwt加密鉴权
+  config.jwt = {
+    secret: "qhdgw@45ncashdaksh2!#@3nxjdas*_672",
+  };
+
+  // redis存储
+  config.redis = {
+    client: {
+      port: 6379, // Redis port
+      host: "127.0.0.1", // Redis host
+      password: "",
+      db: 2,
+    },
   };
   return {
     ...config,
