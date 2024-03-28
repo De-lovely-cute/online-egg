@@ -13,6 +13,12 @@ module.exports = {
   sequelize:{
     enable: true,
     package: 'egg-sequelize',
-  }
+  },
+
+  // 参数校验
+  valparams : {
+    enable : true,
+    package: 'egg-valparams'
+  },
 };
 

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = (app) => {
-  const { INTEGER, STRING, DATE, TEXT } = aqq.Sequelize;
+  const { INTEGER, STRING, DATE, TEXT } = app.Sequelize;
   const Category = app.model.define("category", {
     id: {
       type: INTEGER(20),

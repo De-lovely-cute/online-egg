@@ -61,7 +61,20 @@ module.exports = appInfo => {
       // 所有驼峰命名格式化
       underscored: true,
     }
+
+    
   }
+
+  // 数据加密
+  config.crypto = {
+    secret: "qhdgw@45ncashdaksh2!#@3nxjdas*_672",
+  }
+
+  // 参数验证
+  config.valparams = {
+    locale    : 'zh-cn',
+    throwError: true
+  };
   return {
     ...config,
     ...userConfig,

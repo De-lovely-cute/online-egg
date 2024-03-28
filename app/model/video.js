@@ -11,13 +11,13 @@ module.exports = (app) => {
       type: STRING(100),
       allowNull: false,
       defaultValue: "",
-      comment: "视频标题",
+      comment: "作品标题",
     },
     cover: {
       type: STRING,
       allowNull: true,
       defaultValue: "",
-      comment: "视频封面",
+      comment: "作品封面",
     },
     category_id: {
       type: INTEGER,
@@ -41,7 +41,7 @@ module.exports = (app) => {
       type: TEXT,
       allowNull: false,
       defaultValue: "",
-      comment: "视频描述",
+      comment: "作品描述",
     },
     created_time: {
       type: DATE,

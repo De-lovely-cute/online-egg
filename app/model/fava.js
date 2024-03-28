@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = (app) => {
-  const { INTEGER, DATE } = aqq.Sequelize;
-  const Fava = app.model.finde("fava",{
+  const { INTEGER, DATE } = app.Sequelize;
+  const Fava = app.model.define("fava",{
     id: {
       type: INTEGER(20),
       primaryKey: true,

@@ -1,3 +1,5 @@
+
+
 ## QuickStart
 
 # online-egg
@@ -31,6 +33,9 @@ npm stop
 ```
 直接在https://www.npmjs.com/package/egg-bin上面安装最新的
 ```
+
+# 接口文档
+[接口文档](https://dishaxy.com/doc/7/)
 
 # 关闭csrf开启跨域
 
