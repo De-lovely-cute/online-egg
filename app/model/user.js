@@ -21,6 +21,7 @@ module.exports = (app) => {
       allowNull: false,
       defaultValue: '',
       comment: "密码",
+      // 密码加密
       set(val) {
         const hmac = crypto.createHash("sha256", app.config.crypto.secret);
         hmac.update(val);
