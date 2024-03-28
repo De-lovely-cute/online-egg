@@ -28,18 +28,18 @@ class UserController extends Controller {
         desc: '确认密码'
       }
     }, {
-        equals: [
-          ['password', 'repassword']
-        ]
+        // equals: [
+        //   ['password', 'repassword']
+        // ]
     });
     const { username, password, repassword } = ctx.request.body;  
 
     // 判断密码和确认密码是否一致
-    // if(password !== repassword){
-    //   ctx.throw(400, "密码和确认密码不一致");
-    // }
+    if(password !== repassword){
+      ctx.throw(400, "密码和确认密码不相同");
+    }
 
-    
+
     // 验证用户是否已经存在
     if(await app.model.User.findOne({
       where: {
