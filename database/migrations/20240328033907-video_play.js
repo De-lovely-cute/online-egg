@@ -9,30 +9,30 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-    const { INTEGER, STRING, DATE, TEXT } = Sequelize;
-    return queryInterface.createTable('category', {
+    const { INTEGER, STRING, DATE, ENUM, TEXT } = Sequelize;
+    return queryInterface.createTable("video_play", {
       id: {
         type: INTEGER(20),
         primaryKey: true,
         autoIncrement: true,
       },
-      title: {
-        type: STRING(100),
+      ip: {
+        type: STRING(50),
         allowNull: false,
-        defaultValue: "",
-        comment: "分类名称",
+        defaultValue: 0,
+        comment: "ip地址",
       },
-      cover: {
-        type: STRING,
-        allowNull: true,
-        defaultValue: "",
-        comment: "分类图标",
-      },
-      desc: {
-        type: TEXT,
+      video_id: {
+        type: INTEGER,
         allowNull: false,
-        defaultValue: "",
-        comment: "分类描述",
+        defaultValue: 0,
+        comment: "视频id",
+        references: {
+          model: "video",
+          key: "id",
+        },
+        onDelete: "cascade",
+        onUpdate: "restrict", // 更新时操作
       },
       created_time: DATE,
       updated_time: DATE,
@@ -46,6 +46,6 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
-    return queryInterface.dropTable("category");
+    return queryInterface.dropTable("video_play");
   }
 };
