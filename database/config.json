@@ -1,5 +1,5 @@
 {
-  "development": {
+   "development": {
     "username": "root",
     "password": "root",
     "database": "egg-video",
@@ -8,15 +8,15 @@
   },
   "test": {
     "username": "root",
-    "password": "null",
-    "database": "database_test",
+    "password": "root",
+    "database": "egg-video",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
+    "password": "root",
+    "database": "egg-video",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
