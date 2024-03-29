@@ -15,7 +15,7 @@ module.exports = appInfo => {
 
   // add your middleware config here
   // 注册中间件 全局抛出异常处理
-  config.middleware = ['errorHandler'];
+  config.middleware = ['errorHandler', 'auth'];
 
   // add your user config here
   const userConfig = {
@@ -89,6 +89,24 @@ module.exports = appInfo => {
       password: "",
       db: 2,
     },
+  };
+
+  // 配置那些路由需要验证
+  config.auth = {
+    //ignore: ['/reg', '/login']
+    match: [
+      "/logout",
+      "/video",
+      "/video_detail",
+      "/vod/sign",
+      "/comment",
+      "/fava",
+      "/user/follow",
+      "/user/unfollow",
+      "/user/follows",
+      "/user/fens",
+      "/user/statistics",
+    ],
   };
   return {
     ...config,

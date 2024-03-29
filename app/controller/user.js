@@ -73,13 +73,13 @@ class UserController extends Controller {
         desc: "密码"
       }
     })
-    let { username, password } = ctex.request.body;
+    let { username, password } = ctx.request.body;
     // 验证该用户是否存在
-    const user = await app.model.User.findOne({
+    let user = await app.model.User.findOne({
       where: {
         username
       }
-    })
+    });
     if(!user) {
       ctx.throw(400, "用户不存在")
     }
