@@ -1,41 +1,12 @@
 
+# 接口文档
+[接口文档](https://dishaxy.com/doc/7/)
 
-## QuickStart
-
-# online-egg
-
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
-
-```bash
-npm i
-npm run dev
-open http://localhost:7001/
-```
-
-### Deploy
-
-```bash
-npm start
-npm stop
-```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-
-## 解决 egg-bin 安装不了问题
+# 解决 egg-bin 安装不了问题
 
 ```
 直接在https://www.npmjs.com/package/egg-bin上面安装最新的
 ```
-
-# 接口文档
-[接口文档](https://dishaxy.com/doc/7/)
 
 # 关闭csrf开启跨域
 

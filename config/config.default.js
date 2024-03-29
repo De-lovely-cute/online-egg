@@ -108,6 +108,24 @@ module.exports = appInfo => {
       "/user/statistics",
     ],
   };
+  
+  // 上传图片
+  config.multipart = {
+    fileSize: "50mb",
+    mode: "stream",
+    fileExtensions: [
+      ".xls",
+      ".txt",
+      ".jpg",
+      ".JPG",
+      ".png",
+      ".PNG",
+      ".gif",
+      ".GIF",
+      ".jpeg",
+      ".JPEG",
+    ], // 扩展几种上传的文件格式
+  };
   return {
     ...config,
     ...userConfig,
