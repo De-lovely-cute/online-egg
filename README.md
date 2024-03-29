@@ -1,6 +1,6 @@
 
-# 接口文档
-[接口文档](https://dishaxy.com/doc/7/)
+
+## [接口文档](https://dishaxy.com/doc/7/)
 
 # 解决 egg-bin 安装不了问题
 
